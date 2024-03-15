@@ -1,0 +1,106 @@
+body {
+  margin: 0px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  display: flex;
+  flex-direction: column;
+  background-color: #18142e;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+  background-color: black;
+}
+
+button {
+  background-color: rgb(17, 49, 73);
+  border: none;
+  border-radius: 12px;
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: rgb(231, 233, 234);
+}
+
+main div {
+  display: flex;
+}
+
+main p {
+  font-size: 30px;
+}
+
+.title {
+  justify-content: center;
+  font-size: 24px;
+  background-color: black;
+}
+
+.title img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.title h1 {
+  margin: 0px;
+}
+
+.subtitle {
+  justify-content: center;
+  background-color: black;
+}
+
+.subtitle p {
+  width: 44%;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.hero {
+  justify-content: center;
+  background-color: black;
+  padding: 32px;
+  padding-bottom: 64px;
+  margin-bottom: 32px;
+}
+
+.hero img {
+  width: 65%;
+}
+
+.row {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 32px;
+  margin-bottom: 32px;
+  background-color: black;
+  justify-content: space-between;
+  border-radius: 32px;
+}
+
+.row img {
+  width: 67%;
+}
+
+.left p {
+  margin-right: 32px;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.right p {
+  margin-left: 32px;
+}
