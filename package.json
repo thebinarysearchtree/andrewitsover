@@ -1,0 +1,16 @@
+{
+  "name": "andrewitsover",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "start": "npm run server"
+  },
+  "author": "Andrew Jones",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
