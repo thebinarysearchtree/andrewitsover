@@ -51,8 +51,12 @@ main p {
   margin-right: 10px;
 }
 
-.title h1 {
+h1 {
   margin: 0px;
+}
+
+h1 span {
+  color: #3a3a98;
 }
 
 .subtitle {
@@ -93,14 +97,44 @@ main p {
   width: 67%;
 }
 
-.left p {
+.row p {
   margin-right: 32px;
 }
 
-.right {
-  flex-direction: row-reverse;
+@media screen and (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  .row p {
+    margin-right: 16px;
+  }
 }
 
-.right p {
-  margin-left: 32px;
+.description {
+  flex-direction: column;
+}
+
+.description p {
+  font-size: 23px;
+}
+
+.desc-title {
+  margin-bottom: 0px;
+}
+
+.desc-text {
+  color: #ad8e94;
+  margin-top: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+  color: #a68a8a;
 }
