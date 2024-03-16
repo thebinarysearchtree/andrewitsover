@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta 
+      name="description" 
+      content="Search audio and video by text" />
+    <link href="/contact.css" rel="stylesheet">
+    <title>Quietone</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="/quietone"><img src="/icon.svg" /></a>
+        <a href="/quietone" class="app-name">Quiet<span>one</span></a>
+      </div>
+    </nav>
+    <main>
+      <div class="title"><h1>Contact Us</h1></div>
+      <p class="description">If you need support or have an idea for a new feature, let me know!</p>
+      <form action="/quietone/submit" method="post">
+        <input name="name" type="text" placeholder="name" required />
+        <input name="email" type="email" placeholder="email address" />
+        <textarea name="comments" placeholder="comments" rows="10" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>© 2024 Andrew Jones</p>
+    </footer>
+  </body>
+</html>
