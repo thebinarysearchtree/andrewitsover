@@ -15,7 +15,7 @@ nav {
   align-items: center;
   padding: 16px;
   padding-bottom: 0px;
-  background-color: #131212;
+  background-color: #0d0d0d;
 }
 
 button {
@@ -33,7 +33,7 @@ main {
   color: rgb(231, 233, 234);
   padding-bottom: 32px;
   margin-bottom: 16px;
-  background-color: #131212;
+  background-color: #0d0d0d;
 }
 
 main div {
