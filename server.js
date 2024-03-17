@@ -20,6 +20,12 @@ app.get('/quietone/contact', (req, res) => {
   res.sendFile(path);
 });
 
+
+app.get('/quietone/privacy', (req, res) => {
+  const path = join(import.meta.dirname, 'privacy.html');
+  res.sendFile(path);
+});
+
 app.post('/quietone/submit', async (req, res) => {
   await writeFile(`message${i}.json`, JSON.stringify(req.body));
   i++;

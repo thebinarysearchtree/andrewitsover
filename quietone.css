@@ -135,6 +135,11 @@ h1 span {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 32px;
   color: #a68a8a;
+}
+
+a {
+  text-decoration: none;
 }
