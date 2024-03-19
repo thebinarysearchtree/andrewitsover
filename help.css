@@ -3,7 +3,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   display: flex;
   flex-direction: column;
-  background-color: #18142e;
+  background-color: black;
 }
 
 :root {
@@ -35,10 +35,9 @@ main {
 .help {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  padding: 32px;
+  max-width: 900px;
   border-radius: 13px;
-  background-color: black;
+  padding: 0px 16px;
 }
 
 h1 {
@@ -86,4 +85,24 @@ a {
 footer {
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #221f1f;
+  padding: 32px;
+  border-radius: 11px;
+  margin-bottom: 16px;
+}
+
+.item p {
+  line-height: 1.4;
+  font-size: 17px;
+  margin-right: 32px;
+}
+
+.item img {
+  width: 50%;
 }
