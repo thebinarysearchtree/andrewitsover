@@ -142,4 +142,32 @@ footer {
 
 a {
   text-decoration: none;
+  display: flex;
+}
+
+.mac-store {
+  width: 30px;
+  margin-right: 11px;
+  padding-bottom: 5px;
+}
+
+.microsoft-store {
+  width: 30px;
+  margin-right: 11px;
+  opacity: 0.8;
+}
+
+.trial {
+  margin-right: 11px;
+  font-weight: 500;
+  color: #b39292;
+}
+
+.icon-detail {
+  padding: 0px 16px;
+  flex: 1;
+}
+
+.icon-detail p {
+  font-size: 18px;
 }
