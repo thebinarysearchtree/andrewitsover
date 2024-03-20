@@ -32,9 +32,9 @@ main {
   color: rgb(231, 233, 234);
   padding-bottom: 32px;
   margin-bottom: 16px;
-  background-color: #0d0d0d;
+  background-color: #221f1f;
   align-self: center;
-  padding: 64px;
+  padding: 32px;
   border-radius: 11px;
 }
 
