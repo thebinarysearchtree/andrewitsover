@@ -93,7 +93,7 @@ h1 span {
   border-radius: 32px;
 }
 
-.row img {
+.screenshot {
   width: 67%;
 }
 
@@ -106,7 +106,7 @@ h1 span {
     flex-direction: column;
   }
 
-  .row img {
+  .screenshot {
     width: 100%;
   }
 
@@ -142,6 +142,13 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+nav a {
+  display: flex;
+}
+
+footer a {
   display: flex;
 }
 
@@ -164,10 +171,23 @@ a {
 }
 
 .icon-detail {
+  display: flex;
+  flex-direction: column;
   padding: 0px 16px;
   flex: 1;
 }
 
+.kanji {
+  width: 53px;
+  align-self: center;
+}
+
+.icon {
+  width: 50px;
+  align-self: center;
+}
+
 .icon-detail p {
   font-size: 18px;
+  text-align: center;
 }
