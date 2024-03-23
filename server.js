@@ -6,6 +6,13 @@ const app = express();
 
 let i = 1;
 
+app.use((req, res, next) => {
+  if (req.url.endsWith('.json')) {
+    return res.sendStatus(403);
+  }
+  next();
+});
+
 app.use('/', express.static('./'));
 
 app.use(express.urlencoded({ extended: true }));
@@ -57,13 +64,6 @@ app.get('/quietone/trial', (req, res) => {
   else {
     return res.redirect('/quietone');
   }
-});
-
-app.use((req, res, next) => {
-  if (req.url.endsWith('.json')) {
-    return res.sendStatus(403);
-  }
-  next();
 });
 
 app.post('/quietone/submit', async (req, res) => {
