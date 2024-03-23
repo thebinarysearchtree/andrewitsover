@@ -19,13 +19,14 @@
     <main>
       <div class="title"><h1>Contact Us</h1></div>
       <p class="description">If you need support or have an idea for a new feature, let me know!</p>
-      <form action="/quietone/submit" method="post">
+      <form id="form" action="/quietone/submit" method="post">
         <input name="name" type="text" placeholder="name" required />
         <input name="email" type="email" placeholder="email address" />
         <textarea name="comments" placeholder="comments" rows="10" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </main>
+    <script src="/contact.js"></script>
     <footer>
       <p>© 2024 Andrew Jones</p>
     </footer>

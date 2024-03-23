@@ -69,7 +69,7 @@ app.get('/quietone/trial', (req, res) => {
 app.post('/quietone/submit', async (req, res) => {
   await writeFile(`message${i}.json`, JSON.stringify(req.body));
   i++;
-  return res.redirect('/quietone?submit=true');
+  return res.redirect('/quietone');
 });
 
 const server = app.listen(3000);
