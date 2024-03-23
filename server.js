@@ -36,6 +36,21 @@ app.get('/quietone/technical', (req, res) => {
   res.sendFile(path);
 });
 
+app.get('/quietone/trial', (req, res) => {
+  const agent = req.get('user-agent');
+  if (agent.includes('Macintosh')) {
+    const path = join(import.meta.dirname, 'quietone.dmg');
+    return res.sendFile(path);
+  }
+  else if (agent.includes('Windows')) {
+    const path = join(import.meta.dirname, 'quietone.exe');
+    return res.sendFile(path);
+  }
+  else {
+    return res.redirect('/quietone');
+  }
+});
+
 app.post('/quietone/submit', async (req, res) => {
   await writeFile(`message${i}.json`, JSON.stringify(req.body));
   i++;
