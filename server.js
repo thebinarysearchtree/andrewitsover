@@ -59,6 +59,13 @@ app.get('/quietone/trial', (req, res) => {
   }
 });
 
+app.use((req, res, next) => {
+  if (req.url.endsWith('.json')) {
+    return res.sendStatus(403);
+  }
+  next();
+});
+
 app.post('/quietone/submit', async (req, res) => {
   await writeFile(`message${i}.json`, JSON.stringify(req.body));
   i++;
