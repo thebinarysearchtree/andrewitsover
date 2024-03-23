@@ -36,15 +36,23 @@ app.get('/quietone/technical', (req, res) => {
   res.sendFile(path);
 });
 
+app.get('/quietone/quietone.dmg', (req, res) => {
+  const path = join(import.meta.dirname, 'quietone.dmg');
+  res.sendFile(path);
+});
+
+app.get('/quietone/quietone.exe', (req, res) => {
+  const path = join(import.meta.dirname, 'quietone.exe');
+  res.sendFile(path);
+});
+
 app.get('/quietone/trial', (req, res) => {
   const agent = req.get('user-agent');
   if (agent.includes('Macintosh')) {
-    const path = join(import.meta.dirname, 'quietone.dmg');
-    return res.sendFile(path);
+    return res.redirect('./quietone.dmg');
   }
   else if (agent.includes('Windows')) {
-    const path = join(import.meta.dirname, 'quietone.exe');
-    return res.sendFile(path);
+    return res.redirect('./quietone.exe');
   }
   else {
     return res.redirect('/quietone');
