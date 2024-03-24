@@ -125,6 +125,15 @@ h1 span {
   .desc-text {
     margin-bottom: 40px;
   }
+
+  .detail-row {
+    flex-direction: column;
+  }
+
+  .detail-row p {
+    max-width: 350px;
+    align-self: center;
+  }
 }
 
 .description {
